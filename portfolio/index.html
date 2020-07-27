@@ -3,6 +3,7 @@
 <head>
 	<title>My Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="css/superslides.css">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
@@ -17,13 +18,20 @@
 
 	<div id="slides">
 
-			<div class="overlay"></div>
+		<div class="overlay"></div>
 
  	 	<div class="slides-container">
    	 		<img src="img/business-graph.jpg" alt="">
    	 		<img src="img/stock-graph.jpg" alt="">
    	 		<img src="img/stock-market.jpg" alt="">
    	 		<img src="img/tableau-graph.jpg" alt="">
+ 		</div>
+
+ 		<div class="titleMessage">
+ 			<div class ="heading">
+ 				<p class="main">MAXIMILIAN BUCHNER</p>
+ 				<p class="sub typed"></p>
+ 			</div>
  		</div>
 
   		<nav class="slides-navigation">
@@ -34,7 +42,70 @@
 
 	</div>
 
+
+	<div id="about" class="section">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-5">
+					<img class="aboutImage" src="img/Buchner_Maximilian.jpg">
+
+				</div>
+
+				<div class="col-md-7">
+
+					<h4>My name is Maximilian Buchner</h4>
+
+					<p>Hi there! I'm Maximilian Buchner from Berlin, Germany. I currently work as the Head of Business Analytics at <a style="color:#1e7e34; font-weight:700" href="https://www.smava.de/" target="_blank">smava GmbH</a>. I have many years experience as a Manager and Executive Data Scientist, Data Engineer, Data/Business Analyst and Consultant in Offline, Digital and Hybrid markets in e-Commerce and the Financial Loan Sector. I have experience in many different languages such as Python, SQL, R, CSS, JavaScript, matlab and interactive data visualization software such as Tableau, modeanalytics, PowerBI and Google Data Studio, built on Snowflake and Enterprise Data Warehouse approaches, however my favorite combination is Python & SQL with Tableau.</p>
+					<p>I graduated from <a style="color:#1e7e34; font-weight:700" href="https://www.fu-berlin.de/en/index.html" target="_blank">Freie Universität Berlin</a>, Germany in <a style="color:#1e7e34; font-weight:700" href="https://www.geo.fu-berlin.de/en/geol/fachrichtungen/geophy/index.html" target="_blank">Geophysics</a>
+					and <a style="color:#990000; font-weight:700" href="https://www-astro.physik.tu-berlin.de/en/" target="_blank">Astrophysics</a>. I also published as one of the first research papers on magnetotelluric 3-D models about surface structures in cooperation with the <a style="color:#00589c; font-weight:700" href="https://www.gfz-potsdam.de/en/section/near-surface-geophysics/overview/" target="_blank">GFZ Potsdam</a> and <a style="color:#00589c; font-weight:700" href="http://userpage.fu-berlin.de/~hbrasse/" target="_blank">Dr. Heinrich Brasse</a></p>
+				</div>
+			</div>
+		</div>
+
+
+	</div>
+
+	<div id="skills" class="skillSection section">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="col-md-12 text-center">
+					<h2>TECHNICAL SKILLS</h2>
+					<p></p>
+				</div>
+
+				<div class="owl-carousel owl-theme">
+				 	
+				 	<div class="skill">
+				 		<span class="chart" data-percent="67%">
+				 			<span class="percent">67</span>
+				 			<canvas height="152" width="152"></canvas>
+				 		</span>
+				 		<h4>SQL</h4>
+				 		<p>Used in all my projects, either via PostgreSQL, mySQL or in Python SQLAlchemy as connector</p>
+				 	</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
 <script src="js/jquery.superslides.min.js"></script>
+<!-- slider for media-->
+<script src="js/jquery.easypiechart.min.js"></script>
+<!-- pie charts for skills-->
+<script src="js/owl.carousel.min.js"></script>
+<!-- slider for skills-->
+<script src="js/typed.min.js"></script>
+<!-- typewriter to fade see script.js-->
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
