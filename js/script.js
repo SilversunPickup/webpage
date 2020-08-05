@@ -1,5 +1,10 @@
 // jQuery $ as shortcut - read from class in index.html -slides and folder superslides 
+$(window).on("load", function() {
 
+	$(".loader").fadeOut(750, function() {
+		$(".loader").fadeOut(1000);
+	});
+})
 
 $(document).ready(function() {
 
@@ -70,7 +75,7 @@ $(document).ready(function() {
 			 });
   		  }	
 
-	});
+});
 
 
 		if(!countUpFinished && window.pageYOffset > statsTopOffset - $(window).height() + 200) {
@@ -82,9 +87,9 @@ $(document).ready(function() {
 			})
 			countUpFinished = true;
 
-			}
+			};
 
-
+/*
 window.onscroll = function() {myFunction()};
 
 var header = document.getElementById("myHeader");
@@ -96,6 +101,38 @@ function myFunction() {
   } else {
     header.classList.remove("sticky");
   }
-}
+};*/
 
+	$("#navigation li a").click(function(e) {
+		e.preventDefault();
+
+		var targetElement = $(this).attr("href");
+		var targetPosition = $(targetElement).offset().top;
+		$("html, body").animate({ scrollTop: targetPosition - 50 }, "slow");
+
+	});
+
+
+
+	const nav = $("#navigation");
+	const navTop = nav.offset().top;
+
+	$(window).on("scroll", stickyNavigation);
+
+	function stickyNavigation() {
+
+		var body = $("body");
+
+		if($(window).scrollTop() >= navTop) {
+			body.css("padding-top", nav.outerHeight() + "px");
+			body.addClass("fixedNav");
+		}
+		else {
+			body.css("padding-top", 0);
+			body.removeClass("fixedNav")
+		}
+			
+		
+		
+	}
 });
