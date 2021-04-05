@@ -12,3 +12,6 @@ You can find them here:
 
 www.icons8.com
 www.pexels.com
+
+
+One needs to add a CV at a place in the bottom part of the webpage, I deleted the part but left the code for the greater good. Link leads to nowhere for now
